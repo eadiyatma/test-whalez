@@ -6,6 +6,7 @@ import ButtonComponent from "../components/ButtonComponent.vue";
 import { ref } from "vue";
 import IconMagnify from "../components/icons/IconMagnify.vue";
 import IconBell from "../components/icons/IconBell.vue";
+import IconHome from "../components/icons/IconHome.vue";
 
 const button = ref([
   {
@@ -28,9 +29,9 @@ const button = ref([
 </script>
 
 <template>
-  <main class="">
+  <main class="bg-gray-50">
     <SidebarComponent />
-    <div class="pl-24 py-2 bg-background min-h-screen pr-8">
+    <div class="pl-56 py-2 bg-background min-h-screen pr-8">
       <!-- navbar -->
       <nav
         class="bg-white shadow-md p-4 rounded-md flex justify-between items-center"
@@ -54,8 +55,23 @@ const button = ref([
         </div>
       </nav>
 
+      <!-- breadcrumbs -->
+      <nav class="rounded-md w-full my-4 flex gap-6 items-center">
+        <div class="text-2xl">Course</div>
+        <ol class="list-reset flex text-sm items-center">
+          <li>
+            <IconHome />
+          </li>
+          <li><span class="text-gray-500 mx-2">></span></li>
+          <li>
+            <div href="#" class="">Content</div>
+          </li>
+          <li><span class="text-gray-500 mx-2">></span></li>
+          <li class="text-gray-500">Course</li>
+        </ol>
+      </nav>
       <!-- detail coruse -->
-      <div class="bg-white rounded shadow-md mt-12">
+      <div class="bg-white rounded shadow-md mt-4">
         <div class="p-4 border-b border-gray-200 w-full flex flex-col gap-6">
           <!-- title -->
           <div class="text-xl">Course Detail</div>

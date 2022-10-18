@@ -14,7 +14,7 @@ const props = defineProps({
   <div class="flex flex-col gap-1">
     <div class="text-gray-600 text-sm capitalize">{{ props.title }}</div>
     <div
-      class="text-danger-text bg-danger-bg rounded-full w-max py-1 px-4 text-sm capitalize"
+      class="text-danger-text bg-danger-bg rounded-full w-max py-1 font-semibold px-4 text-sm capitalize"
     >
       {{ props.desc }}
     </div>

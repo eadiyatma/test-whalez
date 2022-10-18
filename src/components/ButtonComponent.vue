@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 <template>
   <button
-    class="px-4 py-2 capitalize hover:text-tertiary-text hover:bg-tertiary-bg transition duration-300 ease-out rounded text-sm font-bold"
+    class="px-4 py-2 capitalize hover:text-tertiary-text hover:bg-tertiary-bg transition duration-300 ease-out rounded text-sm"
     :class="props.active ? 'text-tertiary-text bg-tertiary-bg' : ''"
   >
     {{ props.label }}
