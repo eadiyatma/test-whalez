@@ -36,9 +36,9 @@ const button = ref([
       <nav
         class="bg-white shadow-md p-4 rounded-md flex justify-between items-center"
       >
-        <div><IconMagnify /></div>
+        <div><IconMagnify class="text-2xl" /></div>
         <div class="flex gap-4 items-center">
-          <div><IconBell /></div>
+          <div><IconBell class="text-2xl" /></div>
           <div class="flex gap2">
             <div class="flex items-end flex-col">
               <div>Jhon Doe</div>
