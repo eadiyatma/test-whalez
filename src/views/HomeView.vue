@@ -60,7 +60,7 @@ const button = ref([
         <div class="text-2xl">Course</div>
         <ol class="list-reset flex text-sm items-center">
           <li>
-            <IconHome />
+            <IconHome class="text-primary text-2xl" />
           </li>
           <li><span class="text-gray-500 mx-2">></span></li>
           <li>
